@@ -47,6 +47,12 @@ $grid-gutter: $base-spacing-unit;
     width: 100%;
   }
 
+  &--no-float {
+    float: none;
+    padding-right: $grid-gutter;
+    padding-left: $grid-gutter;
+  }
+
   @include mq($from: tablet) {
     &--1-4-m {
       width: percentage(1 / 4);
