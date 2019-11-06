@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Shadowsocks and v2ray client tutorial
-image: '/images/posts/1.jpg'
 permalink: '/shadowsocks-v2ray-client-tutorial'
 ---
 
-服务端由shadowsocks及v2ray搭建的客户端使用教程
+###### 服务端由shadowsocks及v2ray搭建的客户端使用教程
 
-##### Windows
+**Windows**
 
 <ol>
     <li>下载<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank">shadowsocks-windows</a>最新版客户端；</li>
@@ -20,16 +19,16 @@ permalink: '/shadowsocks-v2ray-client-tutorial'
     <li>插件程序填入插件程序的文件名v2ray-plugin_windows_***；</li>
 </ol>
 
-##### MacOS
+**macOS**
 
 <ol>
-    <li>下载<a href="https://github.com/shadowsocks/ShadowsocksX-NG/files/3269413/ShadowsocksX-NG.zip" target="_blank">ShadowsocksX-NG</a>客户端(必须使用此链接版本)；</li>
+    <li>下载<a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank">ShadowsocksX-NG</a>客户端；</li>
     <li>解压ShadowsocksX-NG.zip；</li>
     <li>打开ShadowsocksX-NG并填入服务器、端口、密码、算法；</li>
     <li>插件选择v2ray-plugin；</li>
 </ol>
 
-##### iOS
+**iOS**
 
 <ol>
     <li>进入AppStore下载shadowrocket最新版客户端程序(美区)；</li>
@@ -39,7 +38,7 @@ permalink: '/shadowsocks-v2ray-client-tutorial'
     <li>返回点击右上角"完成"；</li>
 </ol>
 
-##### Android
+**Android**
 
 <ol>
     <li>下载并安装<a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank">shadowsocks-android</a>最新版客户端；</li>

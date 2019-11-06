@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Windows diskpart
-image: '/images/posts/2.jpg'
 permalink: '/windows-diskpart'
 ---
 
