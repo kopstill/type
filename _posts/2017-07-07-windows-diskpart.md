@@ -4,19 +4,22 @@ title: Windows diskpart
 permalink: '/windows-diskpart'
 ---
 
-#### Windows diskpart 命令集合
+#### Windows diskpart 命令
 
-> 进入Windows操作系统安装界面按Shift+F10输入diskpart回车  
-> 所有命令都可以通过diskpart -h获取帮助
+> 进入Windows安装程序界面按Shift+F10唤起命令提示符窗口，输入diskpart回车进入分区工具  
+> 所有命令均可通过diskpart -h获取帮助  
+> 官方文档：[中文](https://docs.microsoft.com/zh-cn/windows-server/administration/windows-commands/diskpart){:target="_blank"} | 
+           [英文](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart){:target="_blank"}
 
-##### 常用命令 #####
+##### 常用命令
 ~~~~
-clean
 list
 select
 create
+delete
 format
-exit
+convert
+clean
 ~~~~
 
 ---
@@ -25,29 +28,28 @@ exit
 ```
 list disk
 select disk 0
+clean
 convert gpt
-list disk
 detail disk
 create partition efi size 1024
 create partition msr size 1024
+create partition primary size 71681
 list partition
-create partition primary size=71681
-active
+select partition 0
 format fs=ntfs quick
-(assign letter(=)C)
-(list volume)
+assign letter C
 create partition extended
+create partition logical size 102407
 list partition
-(select partition 0)
-create partition logical size=102407
-(delete partition)
+select partition 0
 format fs=ntfs quick
+assign letter D
 exit
 ```
 
 ---
 
-##### 常用整数分区 #####
+##### 常用整数分区
 ~~~
 Size     NTFS         FAT32
 70 G     71681 MB     71956 MB
