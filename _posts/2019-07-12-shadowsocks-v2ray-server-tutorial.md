@@ -6,24 +6,22 @@ permalink: '/shadowsocks-v2ray-server-tutorial'
 
 ###### 基于shadowsocks+v2ray的服务端搭建教程
 
-> shadowsocks选择的是shadowsocks-libev分支版本，v2ray作为插件使用  
-> 安装可参考[Github文档](https://github.com/shadowsocks/shadowsocks-libev/blob/master/README.md){:target="_blank"}
-
-##### Debian
+> shadowsocks选择的是基于C语言的[shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev){:target="_blank"}分支版本，v2ray作为其插件  
+> [Github安装文档](https://github.com/shadowsocks/shadowsocks-libev/blob/master/README.md){:target="_blank"}
 
 <ol>
-    <li>参考Github文档安装shadowsocks-libev，Debian可以通过命令行安装，也可通过源码安装；</li>
+    <li>参考Github文档安装shadowsocks-libev；</li>
     <li>安装v2ray-plugin插件；
         <ol>
-            <li>下载最新版本<a href="https://github.com/shadowsocks/v2ray-plugin/releases" target="_blank">v2ray-plugin</a>插件，Debian可通过dpkg --print-architecture查看系统架构版本；</li>
-            <li>解压缩包并将解压出的可执行文件v2ray-plugin_linux_*移动到/usr/local/bin目录；</li>
+            <li>根据操作系统下载最新版<a href="https://github.com/shadowsocks/v2ray-plugin/releases" target="_blank">v2ray-plugin</a>插件程序包；</li>
+            <li>解压程序包并将解压出的可执行文件v2ray-plugin_linux_*移动到/usr/local/bin目录；</li>
         </ol>
     </li>
     <li>配置文件中plugin字段填入插件程序名v2ray-plugin_linux_*；</li>
 </ol>
 
 ##### 安装BBR加速
-参考秋水逸冰[一键安装最新内核并开启 BBR 脚本](https://teddysun.com/489.html){:target="_blank"}
+参考秋水逸冰[一键安装最新内核并开启BBR脚本](https://teddysun.com/489.html){:target="_blank"}  
 
 ##### 配置文件示例
 
